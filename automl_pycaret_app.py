@@ -64,26 +64,42 @@ if choice == "ML Modelling":
         st.dataframe(compare_df)
 
         # Select the column to find the maximum value
-        column_name = 'Accuracy'
+        acc_col = 'Accuracy'
 
-        # Find the maximum value in the selected column
-        max_value = compare_df[column_name].max()
-        st.write("Best Model Accuracy : ",max_value)
+        # Find the hightest accuracy value
+        max_acc = compare_df[acc_col].max()
+        st.write("Best Model Accuracy on Train dataset : ",max_acc)
+
+        st.write("Best Model on Train dataset : ",best_model)
+
+
+        st.divider()
+
+
+        # The best model use for Test dataset
+        best_test = predict_model(best_model)
+        df_best_test = pull()
+        st.write("Best Model on Test dataset : ")
+        st.dataframe(df_best_test)
+
+        # Print the accuracy on Test dataset
+        test_acc = df_best_test[acc_col][0]
+        st.write("Accuracy on Test dataset : ",test_acc)
         
-        st.write("Best Model : ",best_model)
-
+        # Save and print best ML model pipeline
         save_best_model = save_model(best_model, 'best_model')
         st.write("Best ML Pipeline : ",save_best_model)
 
         st.divider()
 
         # Upload test data
-        st.subheader("Upload Your Test Dataset for Prediction")
-        test_file = st.file_uploader("Upload Your Test Dataset",type=["csv"])
+        st.subheader("Upload New Test Dataset for Prediction")
+        test_file = st.file_uploader("Upload Your New Test Dataset",type=["csv"])
         
         if test_file is not None: 
             test_df = pd.read_csv(test_file,index_col=None)
             test_df.to_csv('test.csv', index=False)
+            st.write('New TEST dataset:')
             st.dataframe(test_df)
 
             # Predict on test data
