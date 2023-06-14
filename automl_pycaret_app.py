@@ -7,7 +7,6 @@ from pycaret.classification import *
 import pandas as pd
 import numpy as np
 
-import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 import os
 
@@ -37,6 +36,7 @@ if choice == "Profiling dataset (EDA)":
 
 if choice == "ML Modelling":
 
+    st.title("AutoML Modelling & Predict")
     # Convert Index object to array
     columns_array = df.columns.to_numpy()
 
