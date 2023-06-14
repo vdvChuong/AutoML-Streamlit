@@ -1,4 +1,4 @@
-from operator import index
+#from operator import index
 import streamlit as st
 #from pycaret.classification import setup, compare_models, pull, save_model, load_model
 
@@ -7,6 +7,7 @@ from pycaret.classification import *
 import pandas as pd
 import numpy as np
 
+from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 import os
 
@@ -31,7 +32,7 @@ if choice == "Upload dataset":
 
 if choice == "Profiling dataset (EDA)": 
     st.title("Exploratory Data Analysis (EDA)")
-    profile_df = df.profile_report()
+    profile_df = ProfileReport(df)
     st_profile_report(profile_df)
 
 if choice == "ML Modelling":
