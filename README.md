@@ -5,19 +5,10 @@ This is an application used for the graduation thesis of the AutoML group, class
 ## Author
 
 - Author: Chuong Vo Dinh Vinh
-- EmaiL: vodinhvinhchuong@gmail.com
 
 ## Introduction
 
 This application is built using the Python programming language, PyCaret library, and Streamlit framework to create an application that helps find optimal machine learning algorithms and models for classification problems.
-
-## Features
-
-- **Upload Datasets**: Users can easily upload training and testing datasets in CSV format. This allows for integration of data from various sources.
-
-- **Visualization**: The application provides charts and graphs to
-
-This application is designed to optimize the machine learning process using AutoML (Automated Machine Learning). It leverages the Python programming language, PyCaret library, and Streamlit framework to build a user-friendly application for finding optimal algorithms and machine learning models for classification problems.
 
 ## Features
 
@@ -76,6 +67,6 @@ We would like to thank the developers and contributors of the Python programming
 
 ## Contact
 
-For further information or inquiries, please contact [email protected]
+For further information or inquiries, please contact [vodinhvinhchuong@gmail.com]
 
-Happy Machine Learning!
+Happy Automated Machine Learning with Streamlit!
