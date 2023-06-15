@@ -1,6 +1,6 @@
 # AutoML Streamlit Application
 
-This is an application used for the graduation thesis of the AutoML group, class 2019 - 2023, at Ho Chi Minh City University of Technical Education.
+This is an application used for the graduation thesis of the AutoML group, class 2019 - 2023, at Ho Chi Minh City University of Technical Education (HCMUTE).
 
 ## Author
 
