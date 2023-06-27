@@ -1,6 +1,6 @@
 # AutoML Streamlit Application
 
-This is an application used for the graduation thesis of the AutoML group, class 2019 - 2023, at Ho Chi Minh City University of Technical Education (HCMUTE).
+This is an application used for the graduation thesis of the AutoML FIT group, class 2019 - 2023, at Ho Chi Minh City University of Technical Education (HCMUTE).
 
 ## Author
 
@@ -56,10 +56,6 @@ streamlit run app.py
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit them through the GitHub repository's issue tracker.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code according to your needs.
 
 ## Acknowledgements
 

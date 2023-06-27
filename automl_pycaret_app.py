@@ -17,10 +17,11 @@ if os.path.exists('./test.csv'):
     test_df = pd.read_csv('test.csv', index_col=None)
 
 with st.sidebar: 
-    st.image("https://www.onepointltd.com/wp-content/uploads/2020/03/inno2.png")
-    st.title("AutoML PyCaret Application ")
+    #st.image("https://www.onepointltd.com/wp-content/uploads/2020/03/inno2.png")
+    st.image("automl1.png")
     choice = st.radio("Navigation", ["Upload dataset","Profiling dataset (EDA)","ML Modelling", "Download best model"])
     st.info("This AutoML application helps you explore and build ML model for your dataset!")
+    st.image("automl2.png")
 
 if choice == "Upload dataset":
     st.title("Upload Your Dataset")
@@ -131,8 +132,9 @@ if choice == "ML Modelling":
                 key='download-csv'
             )
 
-if choice == "Download best model": 
+if choice == "Download best model":
 
+    st.title("Best model of your dataset")
     col1, col2, col3 , col4, col5 = st.columns(5)
 
     with col1:
