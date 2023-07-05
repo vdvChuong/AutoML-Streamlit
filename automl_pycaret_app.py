@@ -1,12 +1,13 @@
-#from operator import index
+# Streamlit for webapp
 import streamlit as st
-#from pycaret.classification import setup, compare_models, pull, save_model, load_model
 
-# import pycaret classification
+# import PyCaret classification
 from pycaret.classification import *
+
 import pandas as pd
 import numpy as np
 
+# import for EDA
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 import os
