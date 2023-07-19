@@ -60,7 +60,7 @@ if choice == "ML Modelling":
 
         # Compare models -> Best model
         st.divider()
-        best_model = compare_models()
+        best_model = compare_models(include = ['lightgbm','rf', 'lr', 'knn','nb','svm','dt'])
         compare_df = pull()
         st.subheader('Compare Models: ')
         st.dataframe(compare_df)
