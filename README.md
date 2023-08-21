@@ -4,7 +4,7 @@ This is an application used for the graduation thesis of the AutoML FIT group, c
 
 ## Author
 
-- Author: Chuong Vo Dinh Vinh
+- Author: Chuong Vo Dinh Vinh (Vinh Chuong)
 
 ## Introduction
 
